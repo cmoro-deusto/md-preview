@@ -29,11 +29,10 @@ md README.md    # writes /tmp/README.html and opens it
 fisher install ~/Code/gondor/md-preview
 ```
 
-Or from a git remote:
+Or from GitHub:
 
 ```fish
-fisher install <user>/md-preview          # GitHub
-fisher install gitlab.com/<user>/md-preview
+fisher install cmoro-deusto/md-preview
 ```
 
 After editing the repo, run `fisher update ~/Code/gondor/md-preview` to reinstall.
@@ -55,6 +54,10 @@ completions/md.fish                     completes .md / .markdown files
 ```
 
 The assets live in a subdirectory of `functions/` because fisher only installs `functions/`, `conf.d/`, `completions/` and `themes/`. The function finds them relative to its own file.
+
+## License
+
+MIT, see [LICENSE](LICENSE).
 
 ## Third-party
 
