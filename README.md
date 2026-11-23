@@ -21,7 +21,7 @@ md README.md    # writes /tmp/README.html and opens it
 - [fisher](https://github.com/jorgebucaran/fisher) (tested with 4.4.5)
 - pandoc with the `--syntax-highlighting` option (tested with 3.11)
 - A browser set as the default application for `text/html`. On Linux `md` uses fish's `open`, which calls `xdg-open`. Check with `xdg-mime query default text/html` and set with `xdg-mime default firefox.desktop text/html`.
-- Fonts: SF Pro Display, New York, SF Mono. Without them the page falls back to system fonts.
+- Fonts (optional): SF Pro Display, New York and SF Mono. If they are missing, the page uses the platform's own fonts: the system font on macOS, Segoe UI / Cascadia / Cambria on Windows, and on Linux the first installed of Inter, Noto, Roboto, Cantarell or DejaVu (sans), Charter, Source Serif 4, Noto Serif or Georgia (serif), and JetBrains Mono, Fira Mono, Noto Sans Mono or DejaVu Sans Mono (monospace). Fallback fonts are usually wider than SF Pro Display, so lines hold somewhat fewer characters.
 
 ## Install
 

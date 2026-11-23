@@ -14,10 +14,21 @@ $endif$
 
     :root {
       /* ---------- fonts ---------- */
-      --font-sans: "SF Pro Display", "SF Pro Text", "SF Pro", system-ui, sans-serif,
-                   "Apple Color Emoji", "Noto Color Emoji";
-      --font-serif: "New York Small", "New York Medium", "New York", serif;
-      --font-mono: "SF Mono", "SFMono Nerd Font", ui-monospace, monospace;
+      /* SF / New York first; then the platform's UI fonts (macOS, Windows,
+         Linux), then generic families. */
+      --font-sans: "SF Pro Display", "SF Pro Text", "SF Pro",
+                   -apple-system, BlinkMacSystemFont,
+                   "Segoe UI Variable Text", "Segoe UI",
+                   Inter, "Noto Sans", Roboto, Cantarell, "DejaVu Sans",
+                   "Helvetica Neue", Arial, system-ui, sans-serif,
+                   "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
+      --font-serif: "New York Small", "New York Medium", "New York",
+                    ui-serif, "Iowan Old Style", Charter, "Bitstream Charter",
+                    "Source Serif 4", "Noto Serif", Cambria, Georgia, serif;
+      --font-mono: "SF Mono", "SFMono Nerd Font", ui-monospace, Menlo,
+                   "Cascadia Mono", "Cascadia Code", Consolas,
+                   "JetBrains Mono", "Fira Mono", "Noto Sans Mono", "DejaVu Sans Mono",
+                   monospace;
 
       /* ---------- base ---------- */
       --bg: #0d1117;
