@@ -2,9 +2,11 @@
 
 A [fish](https://fishshell.com) function, `md`, that renders a Markdown file to a self-contained dark HTML page in `/tmp` and opens it with the default application for HTML files.
 
-```fish
+```sh
 md README.md    # writes /tmp/README.html and opens it
 ```
+
+![This README rendered with md](docs/screenshot.png)
 
 ## Features
 
@@ -25,13 +27,13 @@ md README.md    # writes /tmp/README.html and opens it
 
 ## Install
 
-```fish
+```sh
 fisher install ~/Code/gondor/md-preview
 ```
 
 Or from GitHub:
 
-```fish
+```sh
 fisher install cmoro-deusto/md-preview
 ```
 
@@ -39,7 +41,7 @@ After editing the repo, run `fisher update ~/Code/gondor/md-preview` to reinstal
 
 ## Uninstall
 
-```fish
+```sh
 fisher remove ~/Code/gondor/md-preview
 ```
 
